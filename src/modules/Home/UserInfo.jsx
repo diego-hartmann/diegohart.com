@@ -13,7 +13,7 @@ const UserInfo = () =>{
                 <div>
                     <h1>Diego Hartmann</h1>
                     <div className='userTitles'>
-                        <span>JavaScript</span> <p>engineer</p>
+                        <span>Fullstack</span> <p>engineer</p>
                     </div>
                 </div>
             </div>
