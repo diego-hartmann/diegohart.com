@@ -1,0 +1,27 @@
+/* .HeaderWrapper{ */
+    /* opacity: 1; */
+    /* transition: .2s; */
+/* } */
+/* .HeaderWrapper:hover{
+    opacity: 1;
+} */
+#Header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px){
+    /* .HeaderWrapper{
+        opacity: 1;
+    } */
+    #Header{
+        flex-direction: column;
+        gap: 76px;
+        padding-top: 40px;
+        justify-content: center;
+        animation: none;
+    }
+  
+}

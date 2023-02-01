@@ -1,0 +1,98 @@
+
+#AboutMe .about{
+    width: 100%;
+}
+#AboutMe i{
+    width: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+#AboutMe .about p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+#AboutMe .about p span{
+    position: relative;
+    /* font-weight: bold; */
+}
+
+/* test */
+
+@media screen and (min-width:500px) {
+    #AboutMe{
+        position: relative;
+    }
+    
+    #AboutMe > #mainDiv{
+        position: absolute;
+        right: -30px;
+        bottom: 20px;
+        transform: scale(.4);
+        transition: .2s ease-in-out;
+    }
+    
+    #AboutMe > #mainDiv:hover{
+        transform: scale(.5);
+    }
+    
+    #AboutMe .about p span::after{
+        content: '';
+        width: 0;
+        opacity: 0;
+        height: 1px;
+        display: block;
+        left:0;
+        bottom: -3px;
+        position: absolute;
+        border-radius: 10px;
+        background-color: var(--green);
+        /* background-color: var(--orange); */
+        transition: .2s;
+    }
+
+    #AboutMe .about p:hover>span:after{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@media  screen and (max-width:560px) {
+    #AboutMe > #mainDiv{
+        transform: scale(.3);
+        right: -70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #AboutMe .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #AboutMe .about p{
+        flex-direction: column;
+        width: 50%;
+        height: 120px;
+        gap:0;
+    }
+    #AboutMe .about p > span{
+        flex-direction: column;
+        color: var(--lighterGray);
+        font-weight: normal;
+    }
+    #AboutMe i{
+        color: var(--green);
+        /* color: var(--orange); */
+        margin-bottom: 0.5rem;
+    }
+    #AboutMe > #mainDiv{
+        display: none;
+    }
+   
+}
+@media screen and (max-width: 300px) {
+    #AboutMe .about p{
+        width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+#Work .works{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.workSingle{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 320px;
+}
+
+@media screen and (min-width: 1000px) {
+    .descriptionSide{
+        align-self: center;
+    }
+}
+
+
+.descriptionSide{
+    width: 35%;
+    align-self: center;
+}
+.descriptionSide ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.descriptionSide li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.imagesSide {
+    width: 60%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 240px;
+    z-index: 1;
+    position: relative;
+}
+
+.imagesSide > img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.phone{
+    z-index: 5;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+}
+.print{
+    background-color: #000;
+}
+.phone.device{
+    z-index: 4;
+}
+.phone.print{
+    transform: translate(5px, 0);
+    height: 300px;
+    border-radius: 30px;
+    width: 140px;
+    object-fit: contain;
+    z-index: 3;
+}
+.laptop{
+    z-index: 2;
+    left: 200px;
+    width: 500px;
+    object-fit: contain;
+}
+.laptop.print{
+    width: 370px;
+    height: 100%;
+    transform: translate(-20px, -23px);
+    object-fit: contain;
+    z-index: 1;
+}
+.laptop.device{
+    transform: translate(-90px, 15px);
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .workSingle{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: unset;
+    }
+    .descriptionSide{
+        width: 100%;
+    }
+    .descriptionSide ul{
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imagesSide{
+        width: 100%;
+    }
+   
+    .phone.device{
+        width: 111px;
+    }
+    .phone.print{
+        transform: translate(5px, 0);
+        height: 220px;
+        border-radius: 10px;
+        width: 102px;
+        object-fit: contain;
+    }
+    .laptop{
+        width: 300px;
+        left: unset;
+        right: 0;
+    }
+    .laptop.print{
+        width: 225px;
+        height: 150px;
+        transform: translate(-18px, -11px);
+     
+    }
+    .laptop.device{
+        transform: translate(20px, 10px);
+    }
+}
+

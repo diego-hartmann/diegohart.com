@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+  /* --green: rgb(0, 204, 255); */
+  
+  /* --green: rgb(153, 255, 0); */
+  /* --darkGreen: rgb(123, 275, 0); */
+  
+  --green: #ff163e;
+  --darkGreen: #ff0e35;
+
+  /* --green:  rgb(255, 181, 83); */
+  /* --darkGreen: rgb(214, 121, 0); */
+
+
+
+  --orange: rgb(252, 143, 0);
+  --darkOrange: rgb(214, 121, 0);
+  --lightOrange: rgb(255, 181, 83);
+  --purple: rgb(181, 0, 252);
+
+  --black: #1a1a1a;
+  --gray: rgb(49, 53, 61);
+  --lightGray:rgb(100, 100, 100);
+  --lighterGray:rgb(190, 190, 190);
+  --darkWhite:rgb(216, 216, 216);
+
+  --bebas: 'Bebas Neue', cursive;
+  --mont: 'Montserrat', sans-serif;
+  --lobs: 'Lobster', cursive;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--lighterGray);
+}
+
+a{
+  text-decoration:none;
+}
+
+a,
+a > i,
+a > span{
+  /* color: #fff ; */
+  color: var(--darkWhite) ;
+  transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  white-space: nowrap;
+}
+a:hover,
+a:hover>i,
+a:hover>span{
+  /* color: var(--purple); */
+  color: #fff;
+}
+h1{
+  font-family: var(--lobs);
+  font-size: 1.5rem;
+  color: var(--darkWhite);
+  font-weight: 400;
+}
+
+li{
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: var(--mont), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container{
+  max-width: 1100px;
+  padding: 30px 3vw;
+  margin: 0 auto;
+}
+.sectionWrapper{
+  width: 100vw;
+
+}
+.section{
+  padding: 100px 3vw;
+  border-top: 1px solid var(--lightGray);
+  transform: translateY(70px);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.section > h1{
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 460px) {
+  .section{
+    padding:0 4vw; 
+    border-top: none;
+    transform: translateY(0);
+  }
+}
+
+.green{
+  color: var(--green);
+}
+.orange{
+  /* color: var(--orange); */
+  color: var(--green);
+}
+.purple{
+  color: var(--purple);
+}

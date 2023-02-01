@@ -1,0 +1,163 @@
+
+.MenuLinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3vw;
+    list-style: none;
+}
+.MenuLinks a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.MenuLinks .cta a {
+    background: var(--darkWhite);
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    overflow:hidden;
+}
+
+@media screen and (min-width: 768px){
+    .MenuLinks .cta a {
+        border: 1px solid transparent;
+    }
+    .MenuLinks .cta a:hover {
+        /* efeito inverter cores realista */
+        /* transform: scale(1.05);
+        background: #222;
+        border: 1px outset var(--darkWhite);
+        filter: drop-shadow(-2px -2px 4px #444) drop-shadow(2px 4px 6px rgba(0,0,0,.7)); */
+        
+        /* efeito inverter cores com neon */
+        /* border: 1px solid var(--darkWhite);
+        background: transparent;
+        filter: drop-shadow(0 0 10px #ffffff70) */
+        
+        /* efeito inverter cores sem neon */
+        /* border: 1px solid var(--darkWhite);
+        background: transparent; */
+        
+        /* efeito normal com neon */
+        /* transform: scale(1.02);
+        filter: drop-shadow(0 0 5px #ffffff70) */
+        
+        /* efeito normal sem neon */
+        transform: scale(1.05);
+
+    }
+    .MenuLinks .cta a:hover * {
+        /* efeito inverter cores  */
+        /* color: var(--darkWhite) !important; */
+    }
+    .MenuLinks .cta a:hover:after {
+        animation-duration: 1.5s;
+    }
+}
+
+.MenuLinks .cta a span,
+.MenuLinks .cta a i{
+    font-weight: bold;
+    color: #333 !important;
+}
+
+/* @media screen and (min-width: 768px){ */
+    .MenuLinks .cta a i{
+        /* animation-name: spin; */
+        display: none; /* temp */
+        /* animation-iteration-count:infinite;
+        animation-duration:3s;
+        animation-direction: alternate; */
+    }
+    /* Shine */
+    .MenuLinks .cta a:after {
+	    content:'';
+        top:0;
+        transform:translateX(100%);
+        width:100%;
+        height:100%;
+        position: absolute;
+        z-index:1;
+        animation: slide 3s infinite;
+            
+        /* 
+        CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
+        */
+        background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+    }
+
+/* animation */
+
+    @keyframes slide {
+        0% {transform:translateX(-100%);}
+        100% {transform:translateX(100%);}
+    }
+    @keyframes spin{
+        from{
+            transform:scale(1);
+        }
+        to{
+            transform:scale(1.3);
+        }
+    }
+/* } */
+
+.MenuLinks .inner a i{
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+}
+.MenuLinks .cta a i{
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.MenuLinks a:hover>i{
+    transform: scale(1);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .MenuLinks {
+        /* width: 100%; */
+        width: 80%;
+    }
+
+    .MenuLinks ul{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .MenuLinks ul li{
+        text-align: center;
+    }
+    .MenuLinks .inner a i{
+        display: none;
+    }
+}
+@media screen and (max-width: 460px){
+    .MenuLinks{
+        /* padding: 6px 0; */
+        /* padding-bottom: 8px; */
+        /* --border : 1px solid var(--lightGray); */
+        /* border-top: var(--border); */
+        /* border-bottom: var(--border); */
+    }
+    .MenuLinks a{
+        padding: 3px 13px;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 20px;
+        --border : 1px solid var(--lightGray);
+        border: var(--border);
+        position: relative; 
+    }
+    
+}

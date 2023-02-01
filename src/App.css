@@ -1,0 +1,12 @@
+.App{
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:460px){
+    .App{
+        gap: 90px;
+    }
+}

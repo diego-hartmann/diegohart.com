@@ -1,0 +1,21 @@
+
+#Home{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative
+}
+
+@media  screen and (max-width: 460px) {
+    #Home{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 104px;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-top: -73px;
+    }
+}

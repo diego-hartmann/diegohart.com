@@ -1,0 +1,100 @@
+#Appear{
+    animation-name: appear;
+    animation-duration: .2s;
+    transform-origin: bottom;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: -70px;
+    z-index: 3;
+    left: 190px;
+} 
+@keyframes appear{
+    0%   { transform: scale(.1, 1.9); opacity: 0;  }
+    1%   { opacity: 1;                             }
+    80%  { transform: scale(1.9, 0.1);             }    
+    90%  { transform: scale(0.8, 1.2);             }
+    100% { transform: scale(1, 1);                 }
+}
+
+#PlayerMovement{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+}
+#Player{
+    width: 30px;
+    height: 30px;
+    background: var(--green);
+    border-radius: 50%;
+}
+.eye{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.walk{
+    animation-name: walk;
+    animation-duration: .5s;
+    transform-origin: bottom left;
+    animation-iteration-count: infinite;
+}
+@keyframes walk {
+    0%   { transform: scale(1.1, 0.9) }
+    50%  { transform: scale(1.4 , 0.6) }
+    100% { transform: scale(1.1, 0.9) }
+}
+
+
+.down{
+    animation-name: down;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    transform-origin:bottom;
+    animation-fill-mode: forwards;
+}
+
+@keyframes down {
+    from {transform: scale(.5, 1.5)}
+    to {transform: scale(1.5, .5)}
+}
+
+
+.idle{
+    animation-name: idle;
+    animation-duration: 3s;
+    transform-origin:bottom;
+    animation-iteration-count: infinite;
+}
+
+@keyframes idle {
+    0%   { transform: scale(0.9, 1.1) }
+    50%  { transform: scale(1.1, 0.9) }
+    100% { transform: scale(0.9, 1.1) }
+    /* 0%   {transform: translate3d(0,0,0) }
+    40%  {transform: translate3d(0, -50px, 0) }
+    100% {transform: translate3d(0,0,0) } */
+}
+.jump{
+    transform-origin:bottom;
+    animation-name: jump;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-funcdtion: jump-start;
+}
+
+@keyframes jump {
+    0%   { bottom: 0; transform: scale(0.5, 1.5) }
+    40%  { bottom: var(--jumpHeight); transform: scale(1.2, 0.8) }
+    100% { bottom: 0; transform: scale(1, 1)}
+    /* 0%   {transform: translate3d(0,0,0) }
+    40%  {transform: translate3d(0, -50px, 0) }
+    100% {transform: translate3d(0,0,0) } */
+}

@@ -1,0 +1,166 @@
+.userSkills{
+    height: 100%;
+    width: 40%;
+    /* width: 50%; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.userSkills ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3vw;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    transition: .2s;
+}
+
+i.skillItem{
+    font-size: 2rem;
+}
+
+.skillItem{
+    user-select: none;
+    display:block;
+}
+
+/* .pullArrowRight,
+.pullArrow{
+    display: none;
+    animation: none;
+} */
+
+
+/* apenas PC */
+@media screen and (min-width:768px){
+
+    .userSkills ul li{
+        animation-name: show-from-right;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(1s * var(--delay));
+    }
+   
+    @keyframes show-from-right {
+        0%{
+            transform: translateX(100vw);
+        }
+        70%{
+            transform: translateX(-20px);
+        }
+        100%{
+            transform: translateX(0);
+        }
+
+    }
+
+
+
+    .skillItem{
+        transition-timing-function: ease-in-out;
+        user-select: none;
+        display:block;
+
+        animation-name: show-from-right-item;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: calc(  (1s * var(--delay) ) + (1s) ) ;
+    }
+    /* .skillItem:hover{
+        color: var(--green);
+    } */
+
+    .skillItem.X{ transition-duration: .5s }
+    /* .skillItem.X:hover{ transform: rotateX(360deg)  } */
+    
+    .skillItem.Y{ transition-duration: .5s }
+    /* .skillItem.Y:hover{ transform: rotateY(360deg)} */
+    
+    .skillItem.Z{ transition-duration: 1s }
+    .skillItem.Z:hover{ color: var(--green); transform: rotateZ(720deg) scale(1.5) }
+
+    
+    @keyframes show-from-right-item {
+        0%{
+            color: rgb(190, 190, 190);
+        }
+       
+        50%{
+            color: var(--green);
+        }
+        100%{
+            color: rgb(190, 190, 190);
+        }
+    }
+
+    /* .pullArrowRight,
+    .pullArrow{
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        
+        transform: translateY(50px);
+        animation-name: arrowPull;
+        animation-duration: 1s;
+        color: var(--green);
+        animation-fill-mode: both;
+        animation-delay: 1s;
+    } */
+
+    /* .pullArrowRight{
+        animation-name: arrowPullRight;
+        animation-delay: 0s;
+    } */
+
+    /* @keyframes arrowPull {
+        from{
+            right: -20vw;
+            opacity: 1;
+        }
+        80%{
+            opacity: 1;
+        }
+        to{
+            right: 40vw;
+            opacity: 0;
+        }
+    } */
+    /* @keyframes arrowPullRight {
+        from{
+            left: -20vw;
+            opacity: 1;
+        }
+        80%{
+            opacity: 1;
+        }
+        to{
+            left: 40vw;
+            opacity: 0;
+        }
+    } */
+}
+
+
+
+
+/* apenas mobile */
+
+@media  screen and (max-width: 460px) {
+
+    .userSkills{
+        align-items: flex-start;
+    }
+    .userSkills ul{
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    /* .skillItem{
+        color:var(--green);
+    } */
+
+}

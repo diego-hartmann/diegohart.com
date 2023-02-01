@@ -1,0 +1,92 @@
+.userLinks {
+    width: 100%;
+}
+.userLinks ul{
+    display: flex;
+    gap: 3vw;
+    justify-content: flex-start;
+    /* width: 100%; */
+    position: relative;
+
+}
+.userLinks ul i.externalLink{
+    position: absolute;
+    color: var(--green);
+    font-size: .8rem;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    background: var(--black);
+    padding: 5px;
+    
+    top: -10px;
+    border-radius: 200px;
+    left: -5px;
+
+    transform: scaleX(1) scaleY(-1) rotate(-135deg);
+}
+
+@media screen and (min-width: 768px) {
+
+    .userLinks {
+        transition: .2s;
+        opacity: 0.5;
+    }
+
+    .userLinks:hover{
+        opacity: 1;
+    }
+
+    .userLinks ul{
+        width: fit-content;
+    }
+
+    .userLinks ul i.externalLink{
+        transition: .2s ease-in-out;
+        opacity: 0;
+        transform: scaleX(0) scaleY(0) rotate(-135deg);
+        left: -20px;
+        top: -20px;
+    }
+
+    .userLinks ul:hover  i.externalLink{
+        opacity: 1;
+        transform: scaleX(1) scaleY(-1) rotate(-135deg);
+        animation-name: up-down;
+
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    @keyframes up-down {
+        from{
+            top: -18px;
+        }
+        50%{
+            top: -22px;
+        }
+        to{
+            top: -18px;
+        }
+    }
+}
+.userLinks li a > i{
+    transition: .2s ease-in-out;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px){
+    .userLinks {
+        width: 80%;
+    }
+    .userLinks ul{
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 3vw;
+        border: 1px solid var(--lightGray);
+        padding: 7px 10px;
+        padding-top: 8px;
+        border-radius: 72px;
+    }
+}
+
