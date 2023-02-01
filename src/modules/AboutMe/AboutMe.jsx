@@ -9,7 +9,7 @@ const AboutMe = () =>{
                 <div className='about'>
                     <p>
                         <i className="fab fa-codepen"></i>
-                        ReactJS<span className='orange'>tech-lead</span>
+                        Experience as<span className='orange'>techlead</span>
                     </p>
                     <br></br>
                     <br></br>

@@ -11,7 +11,7 @@ const UserLinks = () =>{
 
     const linksArray =[
         //github
-        createUserLink('fab fa-github', 'https://github.com/diegohartmann/'),
+        createUserLink('fab fa-github', 'https://github.com/diego-hartmann/'),
         //linkedin
         createUserLink('fab fa-linkedin-in', 'https://www.linkedin.com/in/diegohart/'),
         //resume
