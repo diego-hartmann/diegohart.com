@@ -17,6 +17,7 @@ const UserLinks = () =>{
         //resume
         // createUserLink('far fa-address-card', 'https://bit.ly/generate-resume'),
         //gmail
+        createUserLink('fab fa-youtube', 'https://www.youtube.com/@diego-hartmann'),
         createUserLink('far fa-envelope', 'mailto:diego11hartmann@gmail.com'),
         //cellphone
         createUserLink('fas fa-phone-alt', `tel:+${phoneNumber}`),
