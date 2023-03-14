@@ -12,6 +12,7 @@ const UserLinks = () =>{
     const linksArray =[
         //github
         createUserLink('fab fa-github', 'https://github.com/diego-hartmann/'),
+        //npm
         createUserLink('fab fa-npm', 'https://www.npmjs.com/~diego-hartmann'),
         //linkedin
         createUserLink('fab fa-linkedin-in', 'https://www.linkedin.com/in/diegohart/'),
