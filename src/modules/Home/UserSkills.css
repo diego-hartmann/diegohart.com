@@ -74,10 +74,10 @@ i.skillItem{
     } */
 
     .skillItem.X{ transition-duration: .5s }
-    /* .skillItem.X:hover{ transform: rotateX(360deg)  } */
+    .skillItem.X:hover{ transform: rotateX(360deg)  } 
     
     .skillItem.Y{ transition-duration: .5s }
-    /* .skillItem.Y:hover{ transform: rotateY(360deg)} */
+    .skillItem.Y:hover{ transform: rotateY(360deg)}
     
     .skillItem.Z{ transition-duration: 1s }
     .skillItem.Z:hover{ color: var(--green); transform: rotateZ(720deg) scale(1.5) }
