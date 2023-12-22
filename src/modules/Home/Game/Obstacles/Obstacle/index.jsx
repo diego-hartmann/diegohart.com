@@ -7,7 +7,7 @@ const Obstacle = ({index}) => {
             const str = (Math.random() * (max - min) + min).toFixed(decimals);
             return parseFloat(str);
         }
-        const _delay = getRandomFloat(index, index+1, 2);
+        const _delay = getRandomFloat(index+2, index+4, 2);
         setDelay(_delay)
     },[])
 
