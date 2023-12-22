@@ -2,7 +2,7 @@ import './UserLinks.css';
 
 const UserLinks = () =>{
 
-    const phoneNumber = '5548991855550'
+    const phoneNumber = '351915706378'
 	const desiredMessage = 'Hi Diego! I saw your webpage and would like to get in touch.'
     const whatsappText = desiredMessage.split(' ').join('%20');
     
@@ -16,8 +16,6 @@ const UserLinks = () =>{
         createUserLink('fab fa-npm', 'https://www.npmjs.com/~diego-hartmann'),
         //linkedin
         createUserLink('fab fa-linkedin-in', 'https://www.linkedin.com/in/diegohart/'),
-        //resume
-        // createUserLink('far fa-address-card', 'https://bit.ly/generate-resume'),
         //gmail
         createUserLink('fab fa-youtube', 'https://www.youtube.com/@diego-hartmann'),
         createUserLink('far fa-envelope', 'mailto:diego11hartmann@gmail.com'),
@@ -25,10 +23,6 @@ const UserLinks = () =>{
         createUserLink('fas fa-phone-alt', `tel:+${phoneNumber}`),
         //whatsapp
         createUserLink('fab fa-whatsapp', `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappText}`),
-        //instagram
-        // createUserLink('fab fa-instagram', 'https://www.instagram.com/diegohartmann11/'),
-        //facebook
-        // createUserLink('fab fa-facebook', 'https://www.facebook.com/diegohartmann11/'),
     ]
 
 
