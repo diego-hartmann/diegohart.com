@@ -21,7 +21,7 @@ const Obstacle = ({ index }) => {
 
     const obstacleElement = obstacleRef.current;
 
-    const playerElement = document.getElementById('player');
+    const playerElement = document.getElementById('PlayerMovement');
     if (playerElement && obstacleElement) {
       const obstacleRect = obstacleElement.getBoundingClientRect();
       const playerRect = playerElement.getBoundingClientRect();
