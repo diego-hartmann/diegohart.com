@@ -13,34 +13,26 @@ const AboutMe = () =>{
                     </p>
                     <br></br>
                     <br></br>
+                    
                     <p>
                         <i className="fas fa-laptop-house"></i>
                         <span className='orange'>Freelance</span> developer
                     </p>
+                    
                     <br></br>
                     <br></br>
                     <p>
                         <i className="fas fa-user-graduate"></i>
                         Game Design <span className='orange'>bachelor</span>
                     </p>
-                    <br></br>
-                    <br></br>
-                    <p>
-                        <i className="fas fa-dollar-sign"></i>
-                        Open to <span className='orange'>negotiation</span>
-                    </p>
+                
                     <br></br>
                     <br></br>
                     <p>
                         <i className="fas fa-chart-line"></i>     
-                        <span className='orange'>Professional</span> experience
+                        <span className='orange'>International</span> work history
                     </p>
-                    <br></br>
-                    <br></br>
-                    <p>
-                        <i className="far fa-handshake"></i>
-                        Seeking <span className='orange'>partnerships</span>
-                    </p>
+                 
                 </div>
                 <Cube3D className="Cube3D" />
             </section>
