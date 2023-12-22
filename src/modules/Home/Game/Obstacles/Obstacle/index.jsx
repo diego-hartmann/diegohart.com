@@ -11,15 +11,14 @@ const Obstacle = ({ index }) => {
     }
 
     const _delay = getRandomFloat(index + 2, index + 4, 2);
-    
     setDelay(_delay);
 
+    // Event listener function
     const handleCollision = () => {
       alert('GAME OVER');
       location.reload();
     };
 
-    // Attach the event listener to the obstacle element
     const obstacleElement = obstacleRef.current;
 
     const playerElement = document.getElementById('player');
@@ -32,8 +31,9 @@ const Obstacle = ({ index }) => {
         handleCollision();
       }
     }
+
     return () => {
-      // apply cleanup
+      // Cleanup 
     };
   }, [index]);
 
