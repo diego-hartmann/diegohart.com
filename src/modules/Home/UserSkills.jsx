@@ -20,8 +20,6 @@ const UserSkills = () =>{
         <i className="skillItem X fab fa-css3"></i>             ,
         
         <span className='skillItem X'>TypeScript</span>                     ,
-        
-        <span className='skillItem X'>NextJS</span>                     ,
 
         // <span className='skillItem Y'>MongoDB</span>  ,
         <i className="skillItem X fab fa-unity"></i> ,
