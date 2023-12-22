@@ -11,9 +11,6 @@ const UserSkills = () =>{
         <i className="skillItem Y fab fa-js-square"></i>        ,
                     
         <i className="skillItem Z fab fa-react" style={{...(isWide && {cursor: 'pointer'})}}></i> ,
-        // <i className="skillItem Y fab fa-nest"></i> ,
-
-        // <i className="skillItem X fab fa-html5"></i>            ,
         
         <i className="skillItem Y fab fa-node"></i>  ,
 
@@ -21,11 +18,10 @@ const UserSkills = () =>{
         
         <span className='skillItem X'>TypeScript</span>                     ,
 
-        // <span className='skillItem Y'>MongoDB</span>  ,
         <i className="skillItem X fab fa-unity"></i> ,
 
         <i className="skillItem Y fab fa-git-alt"></i> ,
-        // <i className="skillItem Y fab fa-git-square"></i> ,
+    
     ]
 
 
