@@ -11,6 +11,8 @@ const UserSkills = () =>{
         <i className="skillItem Y fab fa-js-square"></i>        ,
                     
         <i className="skillItem Z fab fa-react" style={{...(isWide && {cursor: 'pointer'})}}></i> ,
+
+        <i className="skillItem X fab fa-angular"></i>  ,
         
         <i className="skillItem Y fab fa-node"></i>  ,
 
